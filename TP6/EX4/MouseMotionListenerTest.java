@@ -1,7 +1,5 @@
-package TP6.EX4;
+package EX4;
 
-import java.awt.*;
-import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 

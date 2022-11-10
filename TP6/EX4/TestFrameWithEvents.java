@@ -1,4 +1,4 @@
-package TP6.EX4;
+package EX4;
 
 import java.awt.*;
 import javax.swing.*;
