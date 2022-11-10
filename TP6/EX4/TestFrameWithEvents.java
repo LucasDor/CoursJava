@@ -10,18 +10,25 @@ public class TestFrameWithEvents {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel un = new JLabel("move on me");
+        JMenuBar bar = new JMenuBar();
+        JMenuItem e1 = new JMenuItem("Salut :)");
+
+        bar.add(e1);
+
+        bar.setPreferredSize(new Dimension(200,30));
 
         un.setPreferredSize(new Dimension(100,100));
         un.setBackground(Color.orange);
         un.setOpaque(true);
 
+        f.setJMenuBar(bar);;
         f.add(un);
 
-        un.addMouseListener(new MouseListenerTest());
+        
+        bar.addMouseListener(new MouseListenerTest());
 
         f.pack();
         f.setLocationRelativeTo(null);
-
         f.setVisible(true);
     }
 }
